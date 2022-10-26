@@ -1,13 +1,509 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="A free resource for current and future consultants." />
+    <meta name="author" content="Consulting10.one" />
+    <title>Consulting 101</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    >
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Consulting 101</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#stories">Stories</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#careers">Careers</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#resources">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+            <h1 class="masthead-heading text-uppercase mb-0">Consulting 101</h1>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="masthead-subheading font-weight-light mb-0">Strategy - Software - Design</p>
+        </div>
+    </header>
+    <section class="page-section stories mb-5" id="stories">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Stories</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#daneStory">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="rounded-circle img-thumbnail" src="assets/img/dane.png" alt="Dane" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#jasonStory">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="rounded-circle img-thumbnail" src="assets/img/jason.jpg" alt="Jason" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <section class="page-section bg-primary mb-0" id="about">
+        <div class="container mb-5">
+            <div class="text-white mb-5">
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 big-letter">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p>
+                                    <blockquote class="blockquote">
+                                        <p>
+                                            Consulting is defined as "Providing professional or expert advice".
+                                        </p>
+                                        <footer class="blockquote-footer">
+                                            <cite>https://www.merriam-webster.com/dictionary/consulting</cite>
+                                        </footer>
+                                    </blockquote>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-white">
+                <h3 class="text-center text-uppercase text-white">Types of Consulting</h3>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter blue">
+                            <i class="fa-solid fa-chart-gantt"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">STRATEGY</h5>
+                            <p class="card-text">The process of advising companies on important business decisions by
+                                providing strategic advice.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter green">
+                            <i class="fa-solid fa-computer"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SOFTWARE</h5>
+                            <p class="card-text">The practice of analyzing a company's software needs and creating
+                                technology to help a company perform its operations successfully.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter red">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">DESIGN</h5>
+                            <p class="card-text">Integrates design thinking and a human-centered design process into how
+                                they solve client problems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 big-letter">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p>
+                                    <blockquote class="blockquote">
+                                        <p>
+                                            Every year in consulting is like three years in the corporate world because
+                                            you have multiple clients, multiple issues - you grow so much
+                                        </p>
+                                        <footer class="blockquote-footer">
+                                            Indra Nooyi - former CEO of PepsiCo
+                                        </footer>
+                                    </blockquote>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-white mb-5">
+                <div class="text-white">
+                    <h3 class="text-center text-uppercase text-white">How to be sucessful</h3>
+                    <div class="divider-custom divider-light">
+                        <div class="divider-custom-line"></div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="mb-3 h-100">
+                            <div class="text-center mb-3">
+                                <i class="big-letter fa fa-person mb-4"></i>
+                                <h3>SELF DRIVE</h3>
+                            </div>
+                            <div class="text-center">
+                                Leverage on-line programs<br/>
+                                Read books<br/>
+                                Try, fail, learn, repeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3 h-100">
+                            <div class="text-center mb-3">
+                                <i class="big-letter fa fa-bullhorn mb-4"></i>
+                                <h3>COMMUNITY</h3>
+                            </div>
+                            <div class="text-center">
+                                Join interest groups<br/>
+                                Connect with others<br/>
+                                Teach and share
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3 h-100">
+                            <div class="text-center mb-3">
+                                <i class="big-letter fa fa-clipboard-list mb-4"></i>
+                                <h3>OPPORTUNITIES</h3>
+                            </div>
+                            <div class="text-center">
+                                Formal education<br/>
+                                Internships<br/>
+                                Bootcamps<br/>
+                                Jobs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider-custom divider-light text-white">
+            </div>
+            <div class="text-white">
+                <h3 class="text-center text-uppercase text-white">Degrees and Certs</h3>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter blue">
+                            <i class="fa-solid fa-chart-gantt"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">STRATEGY</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Business Degree</li>
+                                <li>Marketing Degree</li>
+                                <li>Communication Degree</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter green">
+                            <i class="fa-solid fa-computer"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SOFTWARE</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Computer Science Degree</li>
+                                <li>M.I.S. or C.I.S. Degree</li>
+                                <li>Coding Boot Camps</li>
+                                <li>Cloud Certifications</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter red">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">DESIGN</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Communication Degree</li>
+                                <li>Arts Degree</li>
+                                <li>User Experience Degree</li>
+                                <li>Interaction Design Degree</li>
+                                <li>Google Certificates</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section" id="careers">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Careers</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter purple">
+                            A
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Accenture</h5>
+                            <p class="card-text">At the heart of every great change is a great human.</p>
+                            <a href="https://www.accenture.com/us-en/careers" class="btn btn-primary">Careers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter blue">
+                            I
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Indeed</h5>
+                            <p class="card-text">One stop job hunting site.</p>
+                            <a href="https://www.indeed.com" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter green">
+                            M
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Monster</h5>
+                            <p class="card-text">Another job search.</p>
+                            <a href="https://www.monster.com" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-img-top big-letter grey">
+                            +
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">More</h5>
+                            <p class="card-text">More to come.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section bg-primary" id="resources">
+        <div class="container">
+            <div class="text-white">
+                <h2 class="page-section-heading text-center text-uppercase text-white">Resources</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 big-letter">
+                                <i class="fa-solid fa-door-open"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Glassdoor</h5>
+                                    <p class="card-text">A site to explore careers, employers, salaries, and more.</p>
+                                    <a href="https://www.glassdoor.com" class="btn btn-primary">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-uppercase">Layout sourced from Freelancer</p>
+                    <p class="lead mb-0">
+                        Freelancer is a free to use, MIT licensed Bootstrap theme created by
+                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                        .
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="lead mb-0">
+                        Consulting 101  was put together in a hurry and we would love your help to make it better! Contribute<a href="github.com/iDaneSchilling/Consulting101">here</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Consulting 101 - 2022</small></div>
+    </div>
+    <div class="portfolio-modal modal fade" id="daneStory" tabindex="-1" aria-labelledby="daneStory" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Dane</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <img class="img-fluid rounded-circle mb-5" src="assets/img/dane.png" alt="Dane" />
+                                <p class="mb-4">My name is Dane and I have been a consultant for 8-years. I taught high
+                                    school math after graduating from college with a degree in Computer Science. It was
+                                    hard and did not pay well; so, I found a job as a developer. I found myself job
+                                    hopping when the amount of responsibility and stress outpaced my paycheck and
+                                    growth. Then I found consulting, it was a great fit for someone who loves to solve
+                                    problems, but also feels responsible for fixing all the problems. As a consultant, I
+                                    get to solve a problem and wave goodbye. Closure is a great feature.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="jasonStory" tabindex="-1" aria-labelledby="jasonStory"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jason</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <img class="img-fluid rounded-circle mb-5" src="assets/img/jason.jpg" alt="Jason" />
+                                <p class="mb-4">My name is Jason Bogdanski. I first got my start in programming when I
+                                    was in 7th grade making video game websites and hosting them on AOL. I enjoyed the
+                                    challenge of figuring out HTML markup and how to host the website on AOL. Fast
+                                    forward to my college days, I was majoring in computer science and was solving
+                                    problems and building programs. When I graduated, I didn't land a job in computer
+                                    programming, but as a second-tier support specialist. That job still got me used to
+                                    solving complex problems and learning SQL to troubleshoot them. I eventually landed
+                                    a position in computer programming and honed my skills from there. It was not until
+                                    that I got a job in consulting that I saw my growth accelerate. There were several
+                                    different types of projects each with their own unique set of solutions. I grew not
+                                    only in computer programming, but leadership and mentoring skills. It's never a dull
+                                    moment in consulting!</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
